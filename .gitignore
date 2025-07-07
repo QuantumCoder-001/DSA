@@ -1,9 +1,11 @@
-# Ignore everything except src
-*
-!src/
-!.gitignore
-
-# Optional: Ignore IDE files and build outputs
+# IntelliJ project files
 .idea/
-out/
 *.iml
+
+# Build output
+/out/
+/target/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
