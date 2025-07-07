@@ -1,11 +1,10 @@
-# IntelliJ project files
+# IntelliJ
 .idea/
 *.iml
 
 # Build output
-/out/
-/target/
+out/
 
-# OS-specific files
+# OS-specific
 .DS_Store
 Thumbs.db
