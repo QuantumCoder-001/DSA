@@ -1,0 +1,9 @@
+# Ignore everything except src
+*
+!src/
+!.gitignore
+
+# Optional: Ignore IDE files and build outputs
+.idea/
+out/
+*.iml
