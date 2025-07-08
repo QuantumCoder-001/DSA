@@ -1,6 +1,6 @@
 package linkedList;
 
-class Solution {
+public class ReverseLinkedList {
     public Node reverseList(Node head) {
         Node current = head;
         Node prev = null;
