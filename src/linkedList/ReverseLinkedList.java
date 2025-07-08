@@ -1,13 +1,10 @@
 package linkedList;
-class ListNode{
-    int val;
-    ListNode next;
-}
+
 class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode current = head;
-        ListNode prev = null;
-        ListNode nxt;
+    public Node reverseList(Node head) {
+        Node current = head;
+        Node prev = null;
+        Node nxt;
         while(current!=null){
             nxt = current.next;
             current.next = prev;

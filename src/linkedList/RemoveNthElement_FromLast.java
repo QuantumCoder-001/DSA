@@ -1,16 +1,12 @@
 package linkedList;
-class Node2{
-    Node2 next;
-    int data;
-}
 public class RemoveNthElement_FromLast {
 
-    public Node2 removeNthFromLast(Node2 head, int n){
+    public Node removeNthFromLast(Node head, int n){
         if(head == null){
             return null;
         }
         int size = 0;
-        Node2 temp = head;
+        Node temp = head;
         while(temp!=null){
             temp = temp.next;
             size += 1;
