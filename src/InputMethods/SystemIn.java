@@ -7,7 +7,9 @@ public class SystemIn  {
 //        int x = System.in.read();  //only single char
 //        System.out.println(x);// returns ascii value (0=48)
 //        byte [] ch = System.in.readAllBytes(); // infinite read
-          BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+          InputStreamReader i = new InputStreamReader(System.in);
+          BufferedReader bf = new BufferedReader(i);
+          BufferedReader bf2 = new BufferedReader(new InputStreamReader(System.in));
           System.out.println("Enter the name ");
           String name = bf.readLine();
           System.out.println("Enter the id");
