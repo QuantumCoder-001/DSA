@@ -3,7 +3,7 @@ package array.Two_D;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class Spiral_Matrix{
     public List<Integer> spiralOrder(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
