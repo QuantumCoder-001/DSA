@@ -1,4 +1,4 @@
-package array.two_D;
+package array.Two_D;
 
 public class Rotate_Matrix {
     public void rotate(int[][] matrix){

@@ -1,4 +1,4 @@
-package array.two_D;
+package array.Two_D;
 
 public class Matrix_Diagonal_Sum {
      public int sum(int[][] mat){

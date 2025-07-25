@@ -1,4 +1,4 @@
-package array.two_D;
+package array.Two_D;
 
 public class Set_Matrix_Zero {
     public void setZero(int[][] matrix){

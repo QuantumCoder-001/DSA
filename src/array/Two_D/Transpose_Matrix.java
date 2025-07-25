@@ -1,4 +1,4 @@
-package array.two_D;
+package array.Two_D;
 
 public class Transpose_Matrix {
     public int[][] transpose(int[][] matrix){

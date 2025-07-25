@@ -1,4 +1,4 @@
-package array.two_D;
+package array.Two_D;
 
 import java.util.ArrayList;
 import java.util.List;
