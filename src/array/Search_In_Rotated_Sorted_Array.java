@@ -1,3 +1,5 @@
+package array;
+
 public class Search_In_Rotated_Sorted_Array {
     public int search(int[] nums, int target){
         int n = nums.length-1;
