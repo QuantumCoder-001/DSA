@@ -1,6 +1,6 @@
 package array;
 
-class Solution {
+class Majority_Element {
     public static int majorityElement(int[] nums) {
 
        int count = 0;

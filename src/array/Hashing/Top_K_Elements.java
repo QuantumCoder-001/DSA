@@ -6,7 +6,6 @@ import java.util.Map;
 
 public class Top_K_Elements {
     public int[] getTopKElements(int[] nums,int k){
-        int n = nums.length;
         int[] res = new int[k];
         Map<Integer,Integer> map = new HashMap<>();
         for (int num : nums) {

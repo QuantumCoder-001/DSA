@@ -2,7 +2,7 @@ package array;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class twoSum {
+public class Two_Sum {
     static int[] getSum(int[] a,int target){
         int[] ar = {-1,-1};
         int[] copy = Arrays.copyOf(a, a.length);
