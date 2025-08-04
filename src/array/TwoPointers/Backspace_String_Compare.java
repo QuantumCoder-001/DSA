@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class Backspace_String_Compare {
     public boolean checking(String s, String t){

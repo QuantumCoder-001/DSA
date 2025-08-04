@@ -1,6 +1,6 @@
-package array;
+package array.TwoPointers;
 
-public class Merge_Two_Arrays {
+public class Merge_Two_Sorted_Arrays {
     public void sorted(int[] a, int[] b, int k){
         int n = a.length;
         int m = b.length;
@@ -27,6 +27,9 @@ public class Merge_Two_Arrays {
             res[index] = b[j];
             j++;
             index++;
+        }
+        for(int p = 0; p < res.length; p++){
+            a[p] = res[p];
         }
     }
 }

@@ -1,6 +1,4 @@
-package array;
-
-import java.util.Arrays;
+package array.Binary_Search;
 
 public class FindSingleNum {
     static int getNum(int [] nums){

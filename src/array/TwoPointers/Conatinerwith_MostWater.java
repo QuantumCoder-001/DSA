@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 class Conatinerwith_MostWater {
     static int maxArea(int[] height) {

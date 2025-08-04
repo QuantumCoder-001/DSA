@@ -1,4 +1,4 @@
-package array;
+package array.Binary_Search;
 
 public class BinarySearch {
     static int search(int [] a, int target){

@@ -1,6 +1,5 @@
-package array;
+package array.TwoPointers;
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class Two_Sum {
     static int[] getSum(int[] a,int target){
@@ -38,34 +37,5 @@ public class Two_Sum {
             }
         }
         return ar;
-    }
-    static int[] get(int [] a, int target){
-        int[] pair = new int[2];
-
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i = 0; i<a.length; i++){
-            int res = target - a[i];
-            if(map.get(res)!=null){
-                pair[0] = map.get(res);
-                pair[1] = i;
-            }
-            else{
-                map.put(a[i], i);
-            }
-        }
-        return pair;
-    }
-    public static void main(String[] args) {
-        int[] a = {5,2,3,6,9,5,11};
-        int target = 10;
-        int [] x = getSum(a, target);
-        for(int i : x){
-        System.out.print(i+" ");
-        }
-        System.out.println();
-        int [] y = get(a,target);
-        for(int j : y){
-            System.out.print(j+" ");
-        }
     }
 }

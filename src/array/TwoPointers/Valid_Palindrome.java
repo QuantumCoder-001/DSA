@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class Valid_Palindrome {
     public boolean checkPalindrome(String s){

@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class ReverseVowels {
     static boolean isVowel(char c) {

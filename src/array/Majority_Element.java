@@ -6,7 +6,7 @@ class Majority_Element {
        int count = 0;
        int maj = 0;
        for(int num : nums){
-           if(count ==0){
+           if(count == 0){
                maj = num;
            }
            if(maj == num){

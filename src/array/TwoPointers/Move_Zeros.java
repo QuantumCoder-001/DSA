@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 
 public class Move_Zeros {

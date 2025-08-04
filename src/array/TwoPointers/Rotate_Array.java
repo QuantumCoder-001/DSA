@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class Rotate_Array {
     public void reverse(int[] a,int start, int end){

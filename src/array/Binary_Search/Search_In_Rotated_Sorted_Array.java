@@ -1,4 +1,4 @@
-package array;
+package array.Binary_Search;
 
 public class Search_In_Rotated_Sorted_Array {
     public int search(int[] nums, int target){

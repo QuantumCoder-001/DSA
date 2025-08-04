@@ -1,6 +1,6 @@
-package array;
+package array.Binary_Search;
 
-public class SearchInsertPosition {
+public class Search_Insert_Position {
         static int searchInsert(int[] nums, int target) {
             int left = 0;
             int right = nums.length-1;

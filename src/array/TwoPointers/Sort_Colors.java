@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class Sort_Colors {
     static void getColors(int[] a) {

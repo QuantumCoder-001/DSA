@@ -1,4 +1,4 @@
-package array;
+package array.Binary_Search;
 
 public class FindTheDiff {
     static char diff(String s, String t){

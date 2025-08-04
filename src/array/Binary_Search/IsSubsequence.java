@@ -1,4 +1,4 @@
-package array;
+package array.Binary_Search;
 
 public class IsSubsequence {
     public static void main(String[] args) {
