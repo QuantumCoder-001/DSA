@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
 public class ReverseArray {
     public static void main(String[] args) {

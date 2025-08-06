@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
 public class Max_Consecutive_1s {
     public static void main(String[] args) {

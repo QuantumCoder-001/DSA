@@ -1,4 +1,4 @@
-package array;
+package array.TwoPointers;
 
 public class KthElement_of_Two_Sorted_Array {
     public int sorted(int[] a, int[] b, int k){

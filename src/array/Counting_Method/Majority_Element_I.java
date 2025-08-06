@@ -1,6 +1,6 @@
-package array;
+package array.Counting_Method;
 
-class Majority_Element {
+class Majority_Element_I {
     public static int majorityElement(int[] nums) {
 
        int count = 0;

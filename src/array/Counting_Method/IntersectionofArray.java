@@ -1,4 +1,4 @@
-package array.Binary_Search;
+package array.Counting_Method;
 
 import java.util.*;
 public class IntersectionofArray {

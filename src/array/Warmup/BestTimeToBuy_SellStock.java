@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
     // Approach 1 Brute Force
 //    public static int getBestTime(int [] prices){

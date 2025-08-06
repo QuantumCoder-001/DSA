@@ -1,6 +1,6 @@
 package array.TwoPointers;
 
-public class Rotate_Array {
+public class Rotate_Array_K_Times {
     public void reverse(int[] a,int start, int end){
         while(start<end){
             int temp = a[start];

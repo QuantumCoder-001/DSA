@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
 public class Zig_Zag_Array {
     public static void main(String[] args) {

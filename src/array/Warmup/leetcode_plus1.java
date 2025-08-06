@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
 public class leetcode_plus1 {
     static int[] plusOne(int[] digits) {

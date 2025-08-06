@@ -1,4 +1,4 @@
-package array;
+package array.Greedy;
 public class Gas_Station {
     public static void main(String[] args) {
         int[] gas = {2, 2, 3, 4, 5};

@@ -1,4 +1,4 @@
-package array;
+package array.Warmup;
 
 public class Max_Score_from_Subarray_Mins {
     public int maxSum(int[] arr) {
