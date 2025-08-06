@@ -1,4 +1,4 @@
-package recursion.NewStart;
+package recursion;
 
 public class PrintName {
     public static void main(String[] args) {

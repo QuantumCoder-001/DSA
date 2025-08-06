@@ -1,4 +1,4 @@
-package recursion.NewStart;
+package recursion;
 
 public class palindrome {
     public static void main(String[] args) {
