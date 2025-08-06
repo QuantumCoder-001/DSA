@@ -1,25 +1,27 @@
 package recursion;
 
 public class palindrome {
-    public static void main(String[] args) {
-        getpalin(121,0,121);
-        System.out.println(getpalin2(121,0,121)?"Palindrome":"Not Palindrome");
-    }
-    static void getpalin(int n, int rev, int cpy) {
-        if (n == 0) {
-            System.out.println(rev == cpy ? "Palindrome" : "Not Palindrome");
+    static void palindromeNumber1(int num, int reverse, int copy){
+        if(num <= 0){
+            System.out.println(copy == reverse? "Palindrome": "Not Palindrome");
             return;
         }
-        int digit = n % 10;
-        rev = rev * 10 + digit;
-        getpalin(n / 10, rev, cpy);
+        int digit = num % 10;
+        reverse = reverse*10 + digit;
+        palindromeNumber1(num/10,reverse, copy);
     }
-    static boolean getpalin2(int n, int rev,int cpy){
-        if (n == 0) {
-            return rev == cpy;
+    static boolean palindromeNumber2(int num, int reverse, int copy){
+        if(num <= 0){
+            return copy == reverse;
         }
-        int digit = n % 10;
-        rev = rev * 10 + digit;
-        return getpalin2(n / 10, rev, cpy);
+        int digit = num % 10;
+        reverse = reverse*10 + digit;
+        return palindromeNumber2(num/10,reverse, copy);
+    }
+
+    public static void main(String[] args) {
+        int num = 151;
+        palindromeNumber1(num, 0, num);
+        System.out.println(palindromeNumber2(num,0,num));
     }
 }
