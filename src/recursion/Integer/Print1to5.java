@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class Print1to5 {
     public static void main(String[] args) {

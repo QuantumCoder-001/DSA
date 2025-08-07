@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class palindrome {
     static void palindromeNumber1(int num, int reverse, int copy){

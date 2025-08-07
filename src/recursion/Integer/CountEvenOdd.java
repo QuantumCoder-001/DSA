@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class CountEvenOdd {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class ArmstrongNumber {
     public static int countDigits(int num){

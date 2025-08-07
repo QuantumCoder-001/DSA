@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class Count_Zeros {
     public static void countZeros1(int num, int count){

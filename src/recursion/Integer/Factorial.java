@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class Factorial {
     public static void fact1(int num,int sum){

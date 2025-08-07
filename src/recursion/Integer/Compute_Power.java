@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class Compute_Power {
     public static void computePower1(int num, int power, int result){

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.Integer;
 
 public class PrintTable {
     public static void printTable1(int num, int val){
