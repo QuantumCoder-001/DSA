@@ -1,8 +1,6 @@
 package Tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class BFS_LevelOrder {
     static Scanner sc = new Scanner(System.in);
@@ -19,26 +17,34 @@ public class BFS_LevelOrder {
         node.rightChild = createTree();
         return node;
     }
-    static void levelOrder(TreeNode root){
+    static List<List<Integer>> levelOrderItr(TreeNode root){
+        List<List<Integer>> bigList = new ArrayList<>();
         if(root == null){
-            return;
+            return bigList;
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()){
-            TreeNode currentNode = queue.poll();
-            System.out.println(currentNode.data);
-            if(currentNode.leftChild != null){
-                queue.add(currentNode.leftChild);
+            int levelSize = queue.size();
+            List<Integer> smallList = new ArrayList<>();
+            for(int i = 0; i < levelSize; i++){
+                TreeNode currentNode = queue.poll();
+                smallList.add(currentNode.data);
+                if(currentNode.leftChild != null){
+                    queue.add(currentNode.leftChild);
+                }
+                if(currentNode.rightChild != null){
+                    queue.add(currentNode.rightChild);
+                }
             }
-            if(currentNode.rightChild != null){
-                queue.add(currentNode.rightChild);
-            }
+            bigList.add(smallList);
         }
+        return bigList;
     }
 
     public static void main(String[] args) {
         TreeNode root = createTree();
-        levelOrder(root);
+        List<List<Integer>> result = levelOrderItr(root);
+        System.out.println(result);
     }
 }
