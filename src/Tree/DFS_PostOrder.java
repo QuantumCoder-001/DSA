@@ -10,12 +10,11 @@ public class DFS_PostOrder {
         while (!stack.isEmpty()){
             TreeNode currentNode = stack.pop();
             list.addFirst(currentNode.data);
-
-            if(currentNode.rightChild != null){
-                stack.push(currentNode.rightChild);
-            }
             if(currentNode.leftChild != null){
                 stack.push(currentNode.leftChild);
+            }
+            if(currentNode.rightChild != null){
+                stack.push(currentNode.rightChild);
             }
         }
         return list;
