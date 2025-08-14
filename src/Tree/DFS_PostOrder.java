@@ -2,14 +2,14 @@ package Tree;
 import java.util.*;
 
 public class DFS_PostOrder {
-    static Scanner sc = new Scanner(System.in);
+
     static List<Integer> postOrderItr(TreeNode root){
         List<Integer> list = new ArrayList<>();
         Deque<TreeNode> stack = new ArrayDeque<>();
         stack.add(root);
         while (!stack.isEmpty()){
             TreeNode currentNode = stack.pop();
-            list.add(currentNode.data);
+            list.addFirst(currentNode.data);
 
             if(currentNode.rightChild != null){
                 stack.push(currentNode.rightChild);
@@ -18,7 +18,6 @@ public class DFS_PostOrder {
                 stack.push(currentNode.leftChild);
             }
         }
-        Collections.reverse(list);
         return list;
     }
     static List<Integer> postOrderRec(TreeNode root){
@@ -34,24 +33,27 @@ public class DFS_PostOrder {
         helperRec(root.rightChild, list);
         list.add(root.data);
     }
-    static TreeNode createTree(){
-        System.out.println("Enter the data for Node or press -1 for null");
-        int data = sc.nextInt();
-        if(data == -1){
-            return null;
-        }
-        TreeNode node = new TreeNode(data);
-        System.out.println("Enter data for Left Child of "+data);
-        node.leftChild = createTree();
-        System.out.println("Enter data for Right Child of "+data);
-        node.rightChild = createTree();
-        return node;
-    }
-    public static void main(String[] args) {
-        TreeNode root = createTree();
-        List<Integer> result1 = postOrderRec(root);
-        System.out.println(result1);
-        List<Integer> result2 = postOrderRec(root);
-        System.out.println(result2);
-    }
+
+//    static TreeNode createTree(){
+//        System.out.println("Enter the data for Node or press -1 for null");
+//        int data = sc.nextInt();
+//        if(data == -1){
+//            return null;
+//        }
+//        TreeNode node = new TreeNode(data);
+//        System.out.println("Enter data for Left Child of "+data);
+//        node.leftChild = createTree();
+//        System.out.println("Enter data for Right Child of "+data);
+//        node.rightChild = createTree();
+//        return node;
+//    }
+//    static Scanner sc = new Scanner(System.in);
+//    public static void main(String[] args) {
+//        TreeNode root = createTree();
+//        List<Integer> result1 = postOrderRec(root);
+//        System.out.println(result1);
+//        List<Integer> result2 = postOrderRec(root);
+//        System.out.println(result2);
+//    }
+
 }
