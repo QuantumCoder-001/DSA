@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 class TreeNode {
     int data;
-    TreeNode leftChild;
-    TreeNode rightChild;
+    TreeNode left;
+    TreeNode right;
     TreeNode(int data){
         this.data = data;
     }
@@ -18,8 +18,8 @@ public class TreeBasic {
             return;
         }
         System.out.println(root.data);
-        printTree(root.leftChild);
-        printTree(root.rightChild);
+        printTree(root.left);
+        printTree(root.right);
     }
     static TreeNode createTree(){
         System.out.println("Enter the Data for Node or Press -1 for Null:");
@@ -29,9 +29,9 @@ public class TreeBasic {
         }
         TreeNode node = new TreeNode(data);
         System.out.println("Enter the Left Child of "+data);
-        node.leftChild = createTree();
+        node.left = createTree();
         System.out.println("Enter the Right Child of "+data);
-        node.rightChild = createTree();
+        node.right = createTree();
         return node;
 
     }

@@ -10,11 +10,11 @@ public class DFS_PostOrder {
         while (!stack.isEmpty()){
             TreeNode currentNode = stack.pop();
             list.addFirst(currentNode.data);
-            if(currentNode.leftChild != null){
-                stack.push(currentNode.leftChild);
+            if(currentNode.left != null){
+                stack.push(currentNode.left);
             }
-            if(currentNode.rightChild != null){
-                stack.push(currentNode.rightChild);
+            if(currentNode.right != null){
+                stack.push(currentNode.right);
             }
         }
         return list;
@@ -28,8 +28,8 @@ public class DFS_PostOrder {
         if(root == null){
             return;
         }
-        helperRec(root.leftChild, list);
-        helperRec(root.rightChild, list);
+        helperRec(root.left, list);
+        helperRec(root.right, list);
         list.add(root.data);
     }
 

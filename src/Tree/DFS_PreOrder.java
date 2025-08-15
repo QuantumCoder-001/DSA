@@ -27,8 +27,8 @@ public class DFS_PreOrder {
             return;
         }
         list.add(root.data);
-        helperRec(root.leftChild, list);
-        helperRec(root.rightChild, list);
+        helperRec(root.left, list);
+        helperRec(root.right, list);
     }
 
     static List<Integer> preOrderItr(TreeNode root){
@@ -41,11 +41,11 @@ public class DFS_PreOrder {
         while (!stack.isEmpty()){
             TreeNode currentNode = stack.pop();
             list.add(currentNode.data);
-            if(currentNode.rightChild != null){
-                stack.push(currentNode.rightChild);
+            if(currentNode.right != null){
+                stack.push(currentNode.right);
             }
-            if(currentNode.leftChild != null){
-                stack.push(currentNode.leftChild);
+            if(currentNode.left != null){
+                stack.push(currentNode.left);
             }
         }
         return list;

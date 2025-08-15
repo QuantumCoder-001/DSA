@@ -26,9 +26,9 @@ public class DFS_InOrder {
         if(root == null){
             return;
         }
-        helperRec(root.leftChild, list);
+        helperRec(root.left, list);
         list.add(root.data);
-        helperRec(root.rightChild, list);
+        helperRec(root.right, list);
     }
 
     static List<Integer> inOrderItr(TreeNode root){
@@ -41,11 +41,11 @@ public class DFS_InOrder {
         while(!stack.isEmpty() || currentNode != null){
             while(currentNode != null){
                 stack.push(currentNode);
-                currentNode = currentNode.leftChild;
+                currentNode = currentNode.left;
             }
             currentNode = stack.pop();
             list.add(currentNode.data);
-            currentNode = currentNode.rightChild;
+            currentNode = currentNode.right;
         }
         return list;
     }

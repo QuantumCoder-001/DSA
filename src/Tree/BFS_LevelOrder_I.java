@@ -32,11 +32,11 @@ public class BFS_LevelOrder_I {
             for(int i = 0; i < levelSize; i++){
                 TreeNode currentNode = queue.poll();
                 smallList.add(currentNode.data);
-                if(currentNode.leftChild != null){
-                    queue.add(currentNode.leftChild);
+                if(currentNode.left != null){
+                    queue.add(currentNode.left);
                 }
-                if(currentNode.rightChild != null){
-                    queue.add(currentNode.rightChild);
+                if(currentNode.right != null){
+                    queue.add(currentNode.right);
                 }
             }
             bigList.add(smallList);
