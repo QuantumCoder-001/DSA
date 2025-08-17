@@ -20,10 +20,5 @@ public class Move_Zeros {
         for(int n: a){
             System.out.print(n+" ");
         }
-        String s = "abc";
-        char[] y = s.toCharArray();
-        System.out.print(y[1]);
-
-
     }
 }
