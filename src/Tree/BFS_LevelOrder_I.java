@@ -19,7 +19,7 @@ public class BFS_LevelOrder_I {
 //        return node;
 //    }
 
-    static List<List<Integer>> levelOrderItr(TreeNode root){
+    static List<List<Integer>> levelOrder(TreeNode root){
         List<List<Integer>> bigList = new ArrayList<>();
         if(root == null){
             return bigList;

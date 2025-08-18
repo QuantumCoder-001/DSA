@@ -32,27 +32,4 @@ public class DFS_PostOrder {
         helperRec(root.right, list);
         list.add(root.data);
     }
-
-//    static TreeNode createTree(){
-//        System.out.println("Enter the data for Node or press -1 for null");
-//        int data = sc.nextInt();
-//        if(data == -1){
-//            return null;
-//        }
-//        TreeNode node = new TreeNode(data);
-//        System.out.println("Enter data for Left Child of "+data);
-//        node.leftChild = createTree();
-//        System.out.println("Enter data for Right Child of "+data);
-//        node.rightChild = createTree();
-//        return node;
-//    }
-//    static Scanner sc = new Scanner(System.in);
-//    public static void main(String[] args) {
-//        TreeNode root = createTree();
-//        List<Integer> result1 = postOrderRec(root);
-//        System.out.println(result1);
-//        List<Integer> result2 = postOrderRec(root);
-//        System.out.println(result2);
-//    }
-
 }
