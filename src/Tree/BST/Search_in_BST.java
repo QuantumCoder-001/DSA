@@ -1,4 +1,4 @@
-package Tree.BST;public class Search_ib_BST {
+package Tree.BST;public class Search_in_BST {
     static TreeNode searchBST(TreeNode root, int val) {
         if(root == null){
             return null;
