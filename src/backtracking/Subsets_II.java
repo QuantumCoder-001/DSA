@@ -22,7 +22,7 @@ public class Subsets_II {
             }
             smallList.add(nums[i]);
             helper(nums, i+1, smallList, bigList);
-            smallList.remove(smallList.size()-1);
+            smallList.removeLast();
         }
     }
 
